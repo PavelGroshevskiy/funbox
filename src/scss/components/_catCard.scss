@@ -1,0 +1,118 @@
+.position-wrapper {
+  position: absolute;
+  max-width: 320px;
+  height: 476px;
+  width: 320px;
+
+  &--disabled {
+    opacity: 0.4;
+  }
+
+  // overflow: hidden;
+}
+.cat {
+  &-card {
+    display: flex;
+    justify-content: center;
+
+    &_header {
+      margin-top: 25px;
+      color: #666666;
+      padding-left: 45px;
+    }
+    &_title {
+      margin-top: 15px;
+      font-size: 48px;
+      color: "#0000";
+      font-weight: bold;
+      padding-left: 45px;
+    }
+    &_subtitle {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 4px;
+      padding-left: 45px;
+    }
+    &_text {
+      margin-top: 16px;
+      color: #666666;
+      font-size: 14px;
+      font-family: "Trebuchet MS";
+      font-weight: bold;
+      padding-left: 45px;
+    }
+    &_img {
+      background-image: url("../../img/cat.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 370px;
+      height: 360px;
+      position: relative;
+      bottom: -40px;
+      right: 25px;
+
+      &-wrapper {
+        width: 320px;
+        height: 285px;
+        position: absolute;
+        bottom: -4px;
+        left: 0px;
+        overflow: hidden;
+        // padding-left: 45px;
+
+        border-radius: 15px;
+      }
+    }
+    &_circle {
+      padding-top: 10px;
+      background-color: #1698d9;
+      position: absolute;
+      bottom: 15px;
+      right: 16px;
+      font-size: 42px;
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &_selected {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      background-color: rgb(81, 53, 53);
+    }
+    &_weight {
+      color: aliceblue;
+      line-height: 22px;
+      font-family: "Trebuchet MS";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5px 5px;
+
+      &-metric {
+        color: #ffffff;
+        font-size: 20px;
+        margin-top: 5px;
+      }
+    }
+    &_underCard {
+      margin-top: 10px;
+      font-size: 13px;
+      line-height: 16px;
+      color: #ffffff;
+      font-family: "Trebuchet MS";
+      text-align: center;
+      box-shadow: 0.5px 0.866px 1px #000000;
+
+      &--disabled {
+        color: #ffff66;
+      }
+    }
+  }
+}

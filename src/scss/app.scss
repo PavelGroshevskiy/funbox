@@ -1,0 +1,31 @@
+@import "libs/normalize";
+@import "components/variables";
+@import "components/all";
+
+body {
+  background: $background;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 22px;
+}
+
+.topic {
+  margin-top: 25px;
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  color: #ffffff;
+  font-size: 36px;
+  box-shadow: 0.5px 0.866px 1px #000000;
+  font-family: "Exo2.0";
+}
+
+@media (max-width: $tablet-width) {
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+}
